@@ -1,0 +1,129 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#leftside {
+    float: left;
+    width: 30%;
+    min-height: 1300px;
+    background-color: rgb(77, 192, 154);
+}
+
+#rightside {
+    float: right;
+    width: 70%;
+    min-height: 1300px;
+    background-color: rgb(238, 226, 192);
+    position: relative;
+}
+
+#app {
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    min-width: 1100px;
+    min-height: 1150px;
+    border-radius: 0.7em;
+}
+
+header {
+    height: 50px;
+    background-color: rgba(231, 229, 229, 0.5);
+    font-size: 2.75em;
+    padding: 0.5em;
+    color: rgb(216, 150, 7);
+}
+
+.navbar-brand {
+    font-family: 'Sacramento', cursive;
+    font-size:  44px;
+    color: red;
+}
+
+.nav-item {
+    font-size: 20px;
+}
+
+main {
+    position: relative;
+}
+
+div h2 {
+    position: absolute;
+    top: 50px;
+    left: 35px;
+    font-size: 25px;
+    margin: 25px 0 200px 50px;
+    color: rgb(60, 190, 160);
+    text-transform: uppercase;
+}
+
+main #photos img {
+    margin: 1.75em;
+    margin-top: 4em;
+    border: 0.85em solid rgb(255, 255, 255);
+}
+
+section#blogposts {
+    position: absolute;
+    top: 50px;
+    padding: 50px;
+}
+
+div .post {
+    margin: 25px;
+    padding: 25px;
+    border: 2px solid rgba(83, 78, 58, 0.6);
+    border-radius: 0.5em;
+}
+
+footer {
+    bottom: 0;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+.comment-profile {
+    width: 32px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Profile Info styles */
+.floating-box {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    background-color: rgba(23, 21, 21, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1;
+    color: white
+}
+
+/* Close button styles */
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+#closeBtn {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}

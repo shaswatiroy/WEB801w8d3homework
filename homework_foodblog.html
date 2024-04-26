@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Food Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <div class="row">
+        <aside id="leftside"></aside>
+        <aside id="rightside"></aside>
+    </div>
+    <div id="app">
+        <food-header></food-header>
+        <main class="container mt-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <aside id="photos">
+                        <img-chicken></img-chicken>
+                    </aside>
+                </div>
+                <div class="col-md-8">
+                    <food-comments :comments="comments" :author-info="authorInfo"></food-comments>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="text-center mt-auto bg-light p-3">
+        &copy; Copyright FOOD BLOG
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
